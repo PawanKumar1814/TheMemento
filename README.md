@@ -7,7 +7,7 @@ The Memento design pattern consists of three main components:
 - The Originator is the object whose state needs to be saved and restored. It knows how to save its current state   in a Memento and how to restore its state from a Memento.
 - The Originator creates a Memento containing a snapshot of its current state.
 
-- ### Memento:
+### Memento:
 - The Memento is an object that stores the internal state of the Originator. It is typically a lightweight object.
 - The Memento object is immutable, meaning once it is created, it cannot be modified.
 - The Memento protects against direct access to the state stored inside it, ensuring that only the Originator can access and modify its own state.
