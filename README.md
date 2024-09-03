@@ -25,7 +25,7 @@ In this project, we'll create a simple task management system where users can cr
 #### Task Class:
 - Represents a task with two properties: Description and Status.
 - Contains methods to save its current state (Save) into a TaskMemento and to restore a previous state (Restore) from a TaskMemento.
-- 
+  
 #### TaskMemento Class:
 - Stores the state of a Task, capturing its Description and Status.
 - Acts as an immutable snapshot of the Task at a specific point in time.
@@ -37,6 +37,14 @@ In this project, we'll create a simple task management system where users can cr
 
 #### Program Class:
 - Demonstrates the usage of TaskManager by creating a task, updating it, and then undoing the change.
+
+## Design Benefits:
+#### Encapsulation: 
+The TaskMemento class ensures that the internal state of Task is not exposed or altered unintentionally, adhering to good object-oriented principles.
+#### Undo Functionality:
+The use of a stack in TaskManager makes it easy to implement an undo feature, allowing users to revert to previous states of the task.
+#### Separation of Concerns: 
+The design clearly separates the task's state management (Task) from the management of state history (TaskManager).
 
 
 # CLASS DIAGRAM
