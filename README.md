@@ -40,11 +40,11 @@ In this project, we'll create a simple task management system where users can cr
 
 ## Design Benefits:
 #### Encapsulation: 
-The TaskMemento class ensures that the internal state of Task is not exposed or altered unintentionally, adhering to good object-oriented principles.
+- The TaskMemento class ensures that the internal state of Task is not exposed or altered unintentionally, adhering to good object-oriented principles.
 #### Undo Functionality:
-The use of a stack in TaskManager makes it easy to implement an undo feature, allowing users to revert to previous states of the task.
+- The use of a stack in TaskManager makes it easy to implement an undo feature, allowing users to revert to previous states of the task.
 #### Separation of Concerns: 
-The design clearly separates the task's state management (Task) from the management of state history (TaskManager).
+- The design clearly separates the task's state management (Task) from the management of state history (TaskManager).
 
 
 # CLASS DIAGRAM
