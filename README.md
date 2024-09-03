@@ -21,6 +21,23 @@ The Memento design pattern consists of three main components:
 
 In this project, we'll create a simple task management system where users can create tasks, update their descriptions or status, and use undo functionality to revert any changes made to a task. The system will maintain a history of changes to each task, allowing the user to undo operations like modifying the task's description or marking it as completed.
 
+## Key Components:
+#### Task Class:
+- Represents a task with two properties: Description and Status.
+- Contains methods to save its current state (Save) into a TaskMemento and to restore a previous state (Restore) from a TaskMemento.
+- 
+#### TaskMemento Class:
+- Stores the state of a Task, capturing its Description and Status.
+- Acts as an immutable snapshot of the Task at a specific point in time.
+- 
+#### TaskManager Class:
+-Manages the Task and its state history.
+-Uses a stack to keep track of previous states (_history), enabling the ability to undo changes.
+-Provides methods to update the task (UpdateTask), undo the last change (Undo), and display the current state of the task (ShowTask).
+
+#### Program Class:
+- Demonstrates the usage of TaskManager by creating a task, updating it, and then undoing the change.
+
 
 # CLASS DIAGRAM
 ![IMG_20240903_153746111](https://github.com/user-attachments/assets/f5c4a280-ad33-442a-8773-8f41a51626ce)
