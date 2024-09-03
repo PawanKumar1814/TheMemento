@@ -29,11 +29,11 @@ In this project, we'll create a simple task management system where users can cr
 #### TaskMemento Class:
 - Stores the state of a Task, capturing its Description and Status.
 - Acts as an immutable snapshot of the Task at a specific point in time.
-- 
+
 #### TaskManager Class:
--Manages the Task and its state history.
--Uses a stack to keep track of previous states (_history), enabling the ability to undo changes.
--Provides methods to update the task (UpdateTask), undo the last change (Undo), and display the current state of the task (ShowTask).
+- Manages the Task and its state history.
+- Uses a stack to keep track of previous states (_history), enabling the ability to undo changes.
+- Provides methods to update the task (UpdateTask), undo the last change (Undo), and display the current state of the task (ShowTask).
 
 #### Program Class:
 - Demonstrates the usage of TaskManager by creating a task, updating it, and then undoing the change.
