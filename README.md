@@ -23,4 +23,5 @@ In this project, we'll create a simple task management system where users can cr
 
 
 # CLASS DIAGRAM
+![IMG_20240903_153746111](https://github.com/user-attachments/assets/f5c4a280-ad33-442a-8773-8f41a51626ce)
 
